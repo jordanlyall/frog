@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "start": "node server/index.js",
     "dev": "pnpm build:ui --watch & pnpm dev:playground",
     "dev:playground": "pnpm --filter playground dev",
     "dev:cli": "node --import tsx src/cli/index.ts",
@@ -54,5 +55,8 @@
       "hono": "4.1.0",
       "typescript": "5.3.3"
     }
+  },
+  "dependencies": {
+    "express": "^4.19.2"
   }
 }
